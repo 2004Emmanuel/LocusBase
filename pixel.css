@@ -1,0 +1,473 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: brown;
+    user-select: none;
+    min-height: 1000px;
+}
+nav{
+    background-color: #fff   ;
+    padding: 20px 100px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav .logo{
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(196, 13, 13);
+    font-weight: 400;
+}
+.navLinks{
+    display: flex;
+    position: relative;
+}
+.navLinks li{
+    list-style: none;
+    margin-left: 20px ;
+}
+.navLinks li a{
+    color: #a52a2a;
+    font-weight: 300;
+    text-decoration: none;
+}
+.navLinks li a:hover{
+    color: #0000ff;
+}
+.banner{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.525),rgba(0,0,0,0.525)), url(images/shell.jpg);
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.banner .content{
+ max-width: 700px;
+ text-align: center;
+}
+.banner .content h2{
+    font-size: 3.5em;
+    color: #fff;
+    font-weight: 400;
+}
+.banner .content p{
+    font-size: 1.5em;
+    color: #fff;
+}
+.btn{
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color:#fff;
+    padding: 4px 6px;
+    display: inline-block;
+    margin-top: 20px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+.btn:hover{
+    letter-spacing: 10px;
+}
+section{
+    padding: 100px;
+}
+.row{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+.col5{
+    position: relative;
+    width: 48%;
+}
+.titleText{
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span{
+    color: rgb(238, 46, 46);
+    font-size: 2em;
+    font-weight: 300;
+}
+.row .col5  .titleText{
+    color: #fff;
+}
+.row .col5  p{
+    color: #fff;
+}
+ .row .col5 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.row .col5 .imgBx img{
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.menu .content{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.menu .content .box{
+   margin: 20px;
+    width: 300px;
+    border: 15px solid #a52a2a;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.8);
+    
+}
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+   height: 300px;
+}
+.menu .content .box .imgBx img{
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.menu .content .box .text{
+    padding:15px 0px 5px ;
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+}
+.text{
+    color: #fff;
+}
+.team .content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.team .content .box{
+    width: 220px;
+    margin: 20px;
+    border: 15px solid #a52a2a;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.8);
+
+}
+.team .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+}
+.team .content .box .imgBx img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.team .content .box .text{
+    padding: 15px 0 5px;
+}
+.team .content .box .text h3{
+    font-weight: 400;
+}
+.testimonial{
+    background-image: url(images/);
+}
+.testimonial .content{
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.testimonial .content .box{
+    width: 300px;
+    margin: 15px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 15px solid brown;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.8);
+}
+.testimonial .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonial .content .box .imgBx img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+.contact{
+background: url(images/damn.jpg);
+background-size: cover;
+/* background-attachment: fixed; */
+}
+.contactForm{
+    padding: 75px 50px;
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+.contactForm .inputBx{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBx input,
+.contactForm .inputBx textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    font-weight: 300;
+    resize: none;
+    outline: none;
+}
+.contactForm .inputBx input[type="submit"]{
+    font-size: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s;
+    max-width: 100px;
+    background-color: #a52a2a;
+    color: #fff;
+}
+.footer{
+    background: #a52a2a;
+    /* width: 100%; */
+}
+.container{
+   max-width: 1070px;
+   margin: auto;
+}
+.footerRow{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.footerCol{
+    width: 15%;
+    padding: 0 15px;
+}
+.footerRow .footerCol ul{
+    list-style: none;
+}
+.footerCol h4{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 40px 0 ;
+}
+.footerCol li{
+    list-style: none;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.footerCol li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+}
+.footerCol li a:hover{
+    padding-left: 20px;
+    color: #111;
+}
+.social{
+    width: 50%;
+    
+}
+.footerCol .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+.footerCol .social a:hover{
+    background-color: #111;
+}
+.copyRightText{
+    text-align: center;
+    margin: 20px 0;
+}
+.copyRightText a{
+    font-size: 1.2em;
+    color: #fff;
+}
+/*mobile responsiveness*/
+@media (max-width:991px){
+    nav{
+        padding: 10px 20px;
+    }
+    nav .navLinks{
+        display: none;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu3.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position: center;
+       
+    }
+    .menuToggle.active{
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background: url(images/close2.png);
+        background-color: 10px;
+        background-position: center;
+        
+    }
+    .navLinks.active{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #fff;
+        flex-direction: column;
+        left: 0;
+        top: 80px;
+        height: 100%;
+    }
+    .navLinks li a{
+       font-size: 2em;
+      
+    }
+    .navLinks li{
+        margin-top: 20px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    seceton{
+        padding: 20px;
+    }
+    
+    .banner .content h2{
+        font-size: 3em;
+
+    }
+    .banner .content p{
+       font-size: 1em;
+    }
+    .title{
+       text-align: center;
+    }
+    .btn{
+        font-size: 1em;
+    }
+    .titleText{
+        font-size: 1.5em;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col5{
+        width: 100%;
+        position: relative;
+    }
+    
+    .col5 .imgBx{
+         margin-top: 20px;
+       width: 400px;
+    }
+    .menu .content{
+        margin-top: 20px;
+    }
+    .menu .content .box{
+       margin: 25px;
+    }
+    .menu .content .box .imgBx{
+        height: 260px;
+        width: 260px;
+    }
+    .team .content .box{
+       width: 400px;
+    }
+    .team .content .box .imgBx{
+        width: 200px;
+        height: 240px;
+    }
+    .testimonial .content .box {
+        padding: 10px;
+        margin: 10x 20px;
+    }
+    .testimonial .content .box h2{
+        margin-top: 10px;
+    }
+    .contact .contactForm{
+        padding: 1px ;
+        margin-bottom: 20px;
+    }
+    .footerCol{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+}
+@media(max-width:480px){
+    .footerCol{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .banner .content h2{
+        font-size: 1.8em;
+    }
+}
